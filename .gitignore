@@ -1,0 +1,38 @@
+# Data (too large for git)
+/data/
+*.parquet
+
+# Allow prediction files via LFS
+!data/processed/predictions_*.parquet
+
+# Allow compact app-facing runtime data
+!app/data/*.parquet
+app/data/model_returns_refresh.log
+app/data/.model_returns_refresh.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+*.env
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude Code local settings
+.claude/settings.local.json
